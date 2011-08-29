@@ -1,0 +1,22 @@
+Navigation dans le bundle :
+
+URL d'accueil : http://localhost/moto/web/app_dev.php/vehicule
+
+Sur cette page :
+
+- L'ID, le nom et prénom du propriétaire ainsi que le nom de la moto sont affichés sous forme de liste;
+- Pour chaque entité de la liste :
+	--le lien "edit" permet de modifier ou supprimer l'entrée
+	--le lien "show" permet d'afficher en plus les pièces rattachées à la moto en plus de sa catégorie 
+	(les liens d'édition et de suppressions sont aussi présents sur cette page)
+
+- Le lien "Create a new entry" permet d'ajouter une nouvelle moto
+
+Sur la page de création sont demandés :
+
+- le nom
+- prénom du propriétaire
+- nom du véhicule
+- les différentes pièces sous forme d'un choix multiple
+- la catégorie dans une liste déroulante
+

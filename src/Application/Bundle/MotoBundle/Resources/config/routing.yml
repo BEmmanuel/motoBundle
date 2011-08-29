@@ -1,0 +1,27 @@
+vehicule:
+    pattern:  /vehicule
+    defaults: { _controller: ApplicationMotoBundle:vehicule:index }
+
+vehicule_show:
+    pattern: /{id}/show
+    defaults: { _controller: ApplicationMotoBundle:vehicule:show }
+
+vehicule_new:
+    pattern: /new
+    defaults: { _controller: ApplicationMotoBundle:vehicule:new }
+
+vehicule_create:
+    pattern: /create
+    defaults: { _controller: ApplicationMotoBundle:vehicule:create }
+
+vehicule_edit:
+    pattern: /{id}/edit
+    defaults: { _controller: ApplicationMotoBundle:vehicule:edit }
+
+vehicule_update:
+    pattern: /{id}/update
+    defaults: { _controller: ApplicationMotoBundle:vehicule:update }
+
+vehicule_delete:
+    pattern: /{id}/delete
+    defaults: { _controller: ApplicationMotoBundle:vehicule:delete }

@@ -1,0 +1,41 @@
+<h1>Vehicule list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom_proprietaire</th>
+            <th>Prenom_proprietaire</th>
+            <th>Nom_vehicule</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('vehicule_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.nomproprietaire }}</td>
+            <td>{{ entity.prenomproprietaire }}</td>
+            <td>{{ entity.nomvehicule }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('vehicule_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('vehicule_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('vehicule_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>
